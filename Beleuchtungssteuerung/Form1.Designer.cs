@@ -32,17 +32,17 @@
             this.txtHost = new System.Windows.Forms.TextBox();
             this.lblHost = new System.Windows.Forms.Label();
             this.grpLEDControl = new System.Windows.Forms.GroupBox();
-            this.lblPort = new System.Windows.Forms.Label();
-            this.txtPort = new System.Windows.Forms.TextBox();
-            this.btnDisconnect = new System.Windows.Forms.Button();
-            this.btnLedOff = new System.Windows.Forms.Button();
-            this.btnLedRed = new System.Windows.Forms.Button();
-            this.btnLedYellow = new System.Windows.Forms.Button();
+            this.btnLedWhite = new System.Windows.Forms.Button();
+            this.btnLedBlue = new System.Windows.Forms.Button();
             this.btnLedPink = new System.Windows.Forms.Button();
             this.btnLedGreen = new System.Windows.Forms.Button();
             this.btnLedTurkis = new System.Windows.Forms.Button();
-            this.btnLedWhite = new System.Windows.Forms.Button();
-            this.btnLedBlue = new System.Windows.Forms.Button();
+            this.btnLedYellow = new System.Windows.Forms.Button();
+            this.btnLedRed = new System.Windows.Forms.Button();
+            this.btnLedOff = new System.Windows.Forms.Button();
+            this.lblPort = new System.Windows.Forms.Label();
+            this.txtPort = new System.Windows.Forms.TextBox();
+            this.btnDisconnect = new System.Windows.Forms.Button();
             this.grpLEDControl.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -91,63 +91,25 @@
             this.grpLEDControl.TabStop = false;
             this.grpLEDControl.Text = "LED-Steuerung:";
             // 
-            // lblPort
+            // btnLedWhite
             // 
-            this.lblPort.AutoSize = true;
-            this.lblPort.Location = new System.Drawing.Point(288, 9);
-            this.lblPort.Name = "lblPort";
-            this.lblPort.Size = new System.Drawing.Size(29, 13);
-            this.lblPort.TabIndex = 5;
-            this.lblPort.Text = "Port:";
+            this.btnLedWhite.BackColor = System.Drawing.Color.White;
+            this.btnLedWhite.Location = new System.Drawing.Point(217, 171);
+            this.btnLedWhite.Name = "btnLedWhite";
+            this.btnLedWhite.Size = new System.Drawing.Size(68, 60);
+            this.btnLedWhite.TabIndex = 8;
+            this.btnLedWhite.UseVisualStyleBackColor = false;
+            this.btnLedWhite.Click += new System.EventHandler(this.btnLedWhite_Click);
             // 
-            // txtPort
+            // btnLedBlue
             // 
-            this.txtPort.Location = new System.Drawing.Point(291, 28);
-            this.txtPort.Name = "txtPort";
-            this.txtPort.Size = new System.Drawing.Size(64, 20);
-            this.txtPort.TabIndex = 4;
-            this.txtPort.Text = "60666";
-            // 
-            // btnDisconnect
-            // 
-            this.btnDisconnect.Enabled = false;
-            this.btnDisconnect.Location = new System.Drawing.Point(93, 55);
-            this.btnDisconnect.Name = "btnDisconnect";
-            this.btnDisconnect.Size = new System.Drawing.Size(75, 23);
-            this.btnDisconnect.TabIndex = 6;
-            this.btnDisconnect.Text = "Trennen";
-            this.btnDisconnect.UseVisualStyleBackColor = true;
-            this.btnDisconnect.Click += new System.EventHandler(this.btnDisconnect_Click);
-            // 
-            // btnLedOff
-            // 
-            this.btnLedOff.BackColor = System.Drawing.Color.Black;
-            this.btnLedOff.Location = new System.Drawing.Point(69, 171);
-            this.btnLedOff.Name = "btnLedOff";
-            this.btnLedOff.Size = new System.Drawing.Size(68, 60);
-            this.btnLedOff.TabIndex = 0;
-            this.btnLedOff.UseVisualStyleBackColor = false;
-            this.btnLedOff.Click += new System.EventHandler(this.btnLedOff_Click);
-            // 
-            // btnLedRed
-            // 
-            this.btnLedRed.BackColor = System.Drawing.Color.Red;
-            this.btnLedRed.Location = new System.Drawing.Point(69, 39);
-            this.btnLedRed.Name = "btnLedRed";
-            this.btnLedRed.Size = new System.Drawing.Size(68, 60);
-            this.btnLedRed.TabIndex = 1;
-            this.btnLedRed.UseVisualStyleBackColor = false;
-            this.btnLedRed.Click += new System.EventHandler(this.btnLedRed_Click);
-            // 
-            // btnLedYellow
-            // 
-            this.btnLedYellow.BackColor = System.Drawing.Color.Yellow;
-            this.btnLedYellow.Location = new System.Drawing.Point(101, 105);
-            this.btnLedYellow.Name = "btnLedYellow";
-            this.btnLedYellow.Size = new System.Drawing.Size(68, 60);
-            this.btnLedYellow.TabIndex = 2;
-            this.btnLedYellow.UseVisualStyleBackColor = false;
-            this.btnLedYellow.Click += new System.EventHandler(this.btnLedYellow_Click);
+            this.btnLedBlue.BackColor = System.Drawing.Color.Blue;
+            this.btnLedBlue.Location = new System.Drawing.Point(217, 39);
+            this.btnLedBlue.Name = "btnLedBlue";
+            this.btnLedBlue.Size = new System.Drawing.Size(68, 60);
+            this.btnLedBlue.TabIndex = 7;
+            this.btnLedBlue.UseVisualStyleBackColor = false;
+            this.btnLedBlue.Click += new System.EventHandler(this.btnLedBlue_Click);
             // 
             // btnLedPink
             // 
@@ -179,25 +141,63 @@
             this.btnLedTurkis.UseVisualStyleBackColor = false;
             this.btnLedTurkis.Click += new System.EventHandler(this.btnLedTurkis_Click);
             // 
-            // btnLedWhite
+            // btnLedYellow
             // 
-            this.btnLedWhite.BackColor = System.Drawing.Color.White;
-            this.btnLedWhite.Location = new System.Drawing.Point(217, 171);
-            this.btnLedWhite.Name = "btnLedWhite";
-            this.btnLedWhite.Size = new System.Drawing.Size(68, 60);
-            this.btnLedWhite.TabIndex = 8;
-            this.btnLedWhite.UseVisualStyleBackColor = false;
-            this.btnLedWhite.Click += new System.EventHandler(this.btnLedWhite_Click);
+            this.btnLedYellow.BackColor = System.Drawing.Color.Yellow;
+            this.btnLedYellow.Location = new System.Drawing.Point(101, 105);
+            this.btnLedYellow.Name = "btnLedYellow";
+            this.btnLedYellow.Size = new System.Drawing.Size(68, 60);
+            this.btnLedYellow.TabIndex = 2;
+            this.btnLedYellow.UseVisualStyleBackColor = false;
+            this.btnLedYellow.Click += new System.EventHandler(this.btnLedYellow_Click);
             // 
-            // btnLedBlue
+            // btnLedRed
             // 
-            this.btnLedBlue.BackColor = System.Drawing.Color.Blue;
-            this.btnLedBlue.Location = new System.Drawing.Point(217, 39);
-            this.btnLedBlue.Name = "btnLedBlue";
-            this.btnLedBlue.Size = new System.Drawing.Size(68, 60);
-            this.btnLedBlue.TabIndex = 7;
-            this.btnLedBlue.UseVisualStyleBackColor = false;
-            this.btnLedBlue.Click += new System.EventHandler(this.btnLedBlue_Click);
+            this.btnLedRed.BackColor = System.Drawing.Color.Red;
+            this.btnLedRed.Location = new System.Drawing.Point(69, 39);
+            this.btnLedRed.Name = "btnLedRed";
+            this.btnLedRed.Size = new System.Drawing.Size(68, 60);
+            this.btnLedRed.TabIndex = 1;
+            this.btnLedRed.UseVisualStyleBackColor = false;
+            this.btnLedRed.Click += new System.EventHandler(this.btnLedRed_Click);
+            // 
+            // btnLedOff
+            // 
+            this.btnLedOff.BackColor = System.Drawing.Color.Black;
+            this.btnLedOff.Location = new System.Drawing.Point(69, 171);
+            this.btnLedOff.Name = "btnLedOff";
+            this.btnLedOff.Size = new System.Drawing.Size(68, 60);
+            this.btnLedOff.TabIndex = 0;
+            this.btnLedOff.UseVisualStyleBackColor = false;
+            this.btnLedOff.Click += new System.EventHandler(this.btnLedOff_Click);
+            // 
+            // lblPort
+            // 
+            this.lblPort.AutoSize = true;
+            this.lblPort.Location = new System.Drawing.Point(288, 9);
+            this.lblPort.Name = "lblPort";
+            this.lblPort.Size = new System.Drawing.Size(29, 13);
+            this.lblPort.TabIndex = 5;
+            this.lblPort.Text = "Port:";
+            // 
+            // txtPort
+            // 
+            this.txtPort.Location = new System.Drawing.Point(291, 28);
+            this.txtPort.Name = "txtPort";
+            this.txtPort.Size = new System.Drawing.Size(64, 20);
+            this.txtPort.TabIndex = 4;
+            this.txtPort.Text = "60666";
+            // 
+            // btnDisconnect
+            // 
+            this.btnDisconnect.Enabled = false;
+            this.btnDisconnect.Location = new System.Drawing.Point(93, 55);
+            this.btnDisconnect.Name = "btnDisconnect";
+            this.btnDisconnect.Size = new System.Drawing.Size(75, 23);
+            this.btnDisconnect.TabIndex = 6;
+            this.btnDisconnect.Text = "Trennen";
+            this.btnDisconnect.UseVisualStyleBackColor = true;
+            this.btnDisconnect.Click += new System.EventHandler(this.btnDisconnect_Click);
             // 
             // Form1
             // 
@@ -215,6 +215,7 @@
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "TOR-LED-control, v0.1, D. Marx";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.grpLEDControl.ResumeLayout(false);
             this.ResumeLayout(false);

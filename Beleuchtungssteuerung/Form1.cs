@@ -187,5 +187,20 @@ namespace Beleuchtungssteuerung
                 this.TCPConnection.SendData(C_RGB_Codes.LEDWHITE + "\r\n");
             }
         }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {//Close Connection when closing Window
+            if (this.TCPConnection != null && this.TCPConnection.IsConnected)
+            {
+                //Do not get Events anymory
+                this.TCPConnection.Connected -= this.Handle_Connected;
+                this.TCPConnection.Disconnected -= this.Handle_Disconnected;
+                this.TCPConnection.DataReceived -= this.Handle_DataReceived;
+                this.TCPConnection.DataSent -= this.Handle_DataSent;
+                this.TCPConnection.OnError -= this.Handle_ErrorOccured;
+
+                this.TCPConnection.Disconnect();
+            }
+        }
     }
 }
