@@ -39,10 +39,14 @@ namespace Beleuchtungssteuerung
 
         private void Handle_DataReceived(object sender, Co0nUtilZ.ProgressEventArgs e)
         {
-            bool trueness = e.Message.StartsWith("LED-Control ready."); 
-            if (trueness)
+            
+            if (e.Message.StartsWith("LED-Control ready."))
             {
                 this.GUIswitchLEDControllerReady(true);
+            }
+            else if (e.Message.StartsWith("good bye"))
+            {
+                this.Handle_Disconnected(this, new Co0nUtilZ.ProgressEventArgs(-9));
             }
 
         }

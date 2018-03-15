@@ -214,7 +214,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MinimizeBox = false;
             this.Name = "Form1";
-            this.Text = "TOR-LED-control, v0.1, D. Marx";
+            this.Text = "TOR-LED-control, v0.2, D. Marx";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.grpLEDControl.ResumeLayout(false);
